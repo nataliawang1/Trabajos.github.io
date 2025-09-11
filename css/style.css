@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #000000;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  margin: 0 0 1rem;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.main-nav ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #000;
+}
+
+.main-nav li a {
+  display: block;
+  padding: 1rem;
+  font-weight: 600;
+  text-align: center;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.main-nav li a:hover,
+.main-nav li a.active {
+  color: #737273;
+  background-color: #111;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: 80vh auto auto auto auto;
+  gap: 2rem;
+}
+
+
+.hero {
+  grid-column-start: 1;
+  grid-column-end: 17;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background: url(https://i.pinimg.com/736x/9a/ce/c4/9acec4f0f1cb6443b8bba567f0cd75c4.jpg) center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+}
+
+
+.info {
+  grid-column-start: 2;
+  grid-column-end: 16;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  text-align: center;
+  padding: 2rem;
+}
+
+
+.features {
+  grid-column-start: 2;
+  grid-column-end: 16;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.feature {
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+
+.parallax-css {
+  grid-column-start: 1;
+  grid-column-end: 17;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  height: 60vh;
+  background-image: url(https://i.pinimg.com/1200x/e1/b0/f3/e1b0f3e4ca8ecb22620613d6a386b20b.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.parallax-css h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+}
+
+
+.parallax-js {
+  grid-column-start: 1;
+  grid-column-end: 17;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  height: 60vh;
+  background-image: url(https://images.pexels.com/photos/136728/pexels-photo-136728.jpeg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.parallax-js h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+}
+
+
+.about-hero {
+  grid-column-start: 1;
+  grid-column-end: 17;
+  height: 60vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+}
+
+.about-content {
+  grid-column-start: 2;
+  grid-column-end: 16;
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+
+.gallery-page {
+  grid-column-start: 1;
+  grid-column-end: 17;
+  display: grid;
+  grid-template-rows: 60vh auto;
+}
+
+.gallery-hero {
+  grid-column-start: 1;
+  grid-column-end: 17;
+  background-image: url('../img/gallery-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 3rem;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-column-start: 2;
+  grid-column-end: 16;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.gallery-item {
+  background: #111;
+  border-radius: 12px;
+  overflow: hidden;
+  min-height: 200px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+footer {
+  grid-column-start: 1;
+  grid-column-end: 17;
+  text-align: center;
+  padding: 1.5rem;
+  background: #ffffff;
+  margin-top: 2rem;
+}
+footer p {
+  color: #000;
+}
+
+
+.logo {
+  grid-column-start: 9;
+  grid-column-end: 17;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  width: 80px;
+  height: 80px;
+  background-image: url("../img/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto 10px;
+}
